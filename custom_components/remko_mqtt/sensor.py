@@ -54,6 +54,7 @@ async def async_setup_entry(
         if reg_id[key][FIELD_REGTYPE] in [
             "temperature",
             "energy",
+            "counter",
             "sensor",
             "sensor_el",
             "sensor_input",
@@ -102,6 +103,7 @@ class HeatPumpSensor(SensorEntity):
 
         if vp_type in [
             "energy",
+            "counter"
         ]:
             self._attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -137,6 +139,14 @@ class HeatPumpSensor(SensorEntity):
         ):
             self._icon = "mdi:lightning-bolt"
             self._unit = "kWh"
+        elif (
+            vp_type
+            in [
+                "counter",
+            ]
+        ):
+            self._icon = "mdi:counter"
+            self._unit = ""
         else:
             if vp_unit:
                 self._unit = vp_unit

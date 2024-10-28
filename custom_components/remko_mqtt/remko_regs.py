@@ -6,7 +6,7 @@ FIELD_MINVALUE = 3
 FIELD_MAXVALUE = 4
 
 # Query list
-query_list = [1079, 1082, 1893, 1894, 1951, 1972, 1974, 5001, 5032, 5027, 5039, 5051, 5055, 5085, 5131, 5320, 5321, 5693, 5105, 5119, 5600, 5376, 5374]
+query_list = [1079, 1082, 1893, 1894, 1951, 1972, 1974, 5001, 5032, 5027, 5039, 5051, 5055, 5085, 5131, 5320, 5321, 5693, 5105, 5119, 5600, 5376, 5374, 5822]
 
 # Register as sensors
 reg_id = {
@@ -34,6 +34,7 @@ reg_id = {
     "energy_environmental": ["5600", "energy", "kWh", 0, 1000000000],
     "energy_DHW_heating": ["5376", "energy", "kWh", 0, 1000000000],
     "energy_heating": ["5374", "energy", "kWh", 0, 1000000000],
+    "compressor_starts": ["5822", "counter", "", 0, 65535],
     "communication_status": ["communication_status", "generated_sensor", "", 0, 0],
 }
 
@@ -63,6 +64,7 @@ id_names = {
     "energy_environmental": ["Total environment energy", "Umgebunsgenergie gesamt"],
     "energy_DHW_heating": ["energy DHW heating", "Energie Warmwasser"],
     "energy_heating": ["energy heating", "Energie Heizen"],
+    "compressor_starts": ["compressor starts", "Kompressorstarts"],
     "mode1": ["Auto", "Auto"],
     "mode2": ["Heating", "Heizen"],
     "mode3": ["Standby", "Standby"],
