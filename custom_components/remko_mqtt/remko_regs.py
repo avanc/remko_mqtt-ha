@@ -6,7 +6,7 @@ FIELD_MINVALUE = 3
 FIELD_MAXVALUE = 4
 
 # Query list
-query_list = [1079, 1082, 1893, 1894, 1951, 1972, 1974, 5001, 5032, 5027, 5039, 5051, 5055, 5085, 5131, 5320, 5321, 5693, 5105, 5119, 5600, 5376, 5374, 5822, 5034]
+query_list = [1079, 1082, 1893, 1894, 1951, 1972, 1974, 5001, 5032, 5027, 5039, 5051, 5055, 5085, 5131, 5320, 5321, 5693, 5105, 5119, 5600, 5376, 5374, 5822, 5034, 5190]
 
 # Register as sensors
 reg_id = {
@@ -26,6 +26,7 @@ reg_id = {
     "buffer_temp_target": ["5085", "temperature", "ºC", 0, 70],
     "buffer_temp": ["5131", "temperature", "ºC", 0, 70],
     "actual_temp": ["5034", "temperature", "ºC", 0, 70],
+    "heating_actual_temp": ["5190", "temperature", "ºC", 0, 70],
     "circulation_temp": ["5027", "temperature", "ºC", 0, 70],
     "el_consumption": ["5320", "sensor_el", "W", 0, 6000],
     "th_consumption": ["5321", "sensor_el", "W", 0, 20000],
@@ -50,6 +51,7 @@ id_names = {
     "water_temp": ["Water temp.", "Warmwasser Temp."],
     "buffer_temp": ["Buffer temp.", "Heizwasser Temp."],
     "actual_temp": ["Actual temp.", "Ist Temp."],
+    "heating_actual_temp": ["Heating water temp. (actual)", "Heizwasser Ist-Temp."],
     "circulation_temp": ["Circulation temp.", "Zirkulation Temp."],
     "el_consumption": ["Electr. power", "Leistung elektrisch"],
     "th_consumption": ["Therm. power", "Leistung thermisch"],
